@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Single Element Selection</title>
+<script src="src="https://code.jquery.com/jquery-4.0.0.js""></script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        var element = $("p").eq(1).text(); // get second paragraph
+        alert("Selected element text: " + element);
+    });
+});
+</script>
+
+</head>
+<body>
+
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>
+
+<button>Get Single Element</button>
+
+</body>
+</html>

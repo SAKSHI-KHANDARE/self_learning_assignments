@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click and Double Click</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("*").click(function(){
+        alert("Element clicked: " + this.tagName);
+    });
+
+    $("*").dblclick(function(){
+        alert("Element double clicked: " + this.tagName);
+    });
+
+});
+</script>
+
+</head>
+<body>
+
+<h2>Heading</h2>
+<p>This is a paragraph</p>
+<button>Click me</button>
+
+</body>
+</html>
