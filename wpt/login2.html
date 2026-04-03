@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+
+<script>
+function validateLogin(){
+
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+
+
+if(username == "" || password == ""){
+    alert("Both fields are required");
+    return false;
+}
+
+
+if(password.length < 8 || password.length > 12){
+    alert("Password must be between 8 to 12 characters");
+    return false;
+}
+
+
+if(username == "iet" && password == "iet"){
+    window.location.href = "Home.html";
+}
+else{
+    alert("Invalid Username or Password");
+}
+
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Login Form</h2>
+
+Username :
+<input type="text" id="username"><br><br>
+
+Password :
+<input type="password" id="password"><br><br>
+
+<button onclick="validateLogin()">Login</button>
+
+</body>
+</html>

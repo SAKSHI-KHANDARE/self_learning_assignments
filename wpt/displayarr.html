@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script>
+            
+let arr = [12, 5, 8, 21, 30, 7, 14, 9, 2, 18];
+
+// Display array as it is
+document.write("Original Array: " + arr + "<br><br>");
+
+// Even numbers
+let even = arr.filter(function(num){
+    return num % 2 == 0;
+});
+document.write("Even Numbers: " + even + "<br><br>");
+
+// Odd numbers
+let odd = arr.filter(function(num){
+    return num % 2 != 0;
+});
+document.write("Odd Numbers: " + odd + "<br><br>");
+
+// Sorted array
+let sorted = arr.slice().sort(function(a,b){
+    return a - b;
+});
+document.write("Sorted Array: " + sorted);
+s
+ 
+
+        </script>
+        
+
+    
+
+
+
+    </body>
+</html>

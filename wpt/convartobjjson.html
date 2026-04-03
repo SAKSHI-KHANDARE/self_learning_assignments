@@ -1,0 +1,19 @@
+<script>
+let student = {
+    name: "sakshi",
+    age: 22,
+    course: "B.E"
+};
+
+// Object → JSON
+let jsonData = JSON.stringify(student);
+console.log("JSON Format:", jsonData);
+
+// JSON → Object
+let objData = JSON.parse(jsonData);
+console.log("Back to Object:", objData);
+
+document.write(objData.name + "<br>");
+document.write(objData.age + "<br>");
+document.write(objData.course);
+</script>

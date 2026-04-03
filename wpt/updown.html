@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function convert(){
+
+var text=document.getElementById("txt").value;
+var radios=document.getElementsByName("case");
+var result=text;
+
+if(radios[0].checked)
+    result=text.toUpperCase();
+else if(radios[1].checked)
+    result=text.toLowerCase();
+else
+    result=text;
+
+document.getElementById("output").innerHTML=result;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+Enter Text:
+<input type="text" id="txt"><br><br>
+
+<input type="radio" name="case" onclick="convert()"> UpperCase
+<input type="radio" name="case" onclick="convert()"> LowerCase
+<input type="radio" name="case" onclick="convert()"> As It Is
+
+<p id="output"></p>
+
+</body>
+</html>

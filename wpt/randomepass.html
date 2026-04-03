@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random Password</title>
+<script>
+function generatePassword()
+{
+    var len = document.getElementById("len").value;
+
+    var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%";
+    var password = "";
+
+    for(var i = 0; i < len; i++)
+    {
+        var index = Math.floor(Math.random() * str.length);
+        password = password + str.charAt(index);
+    }
+
+    document.getElementById("result").innerHTML = "Password : " + password;
+}
+</script>
+</head>
+
+<body>
+
+<h3>Password Generator</h3>
+
+Enter Length :
+<input type="number" id="len">
+
+<button onclick="generatePassword()">Generate</button>
+
+<p id="result"></p>
+
+</body>
+</html>

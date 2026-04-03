@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Square of a Number</title>
+</head>
+<body>
+
+<h3>Enter a Number</h3>
+
+<input type="number" id="num" required>
+<button onclick="showSquare()">Find Square</button>
+
+<p id="result"></p>
+
+<script>
+function showSquare() {
+    let number = document.getElementById("num").value;
+    let square = number * number;
+    document.getElementById("result").innerHTML = "Square = " + square;
+}
+</script>
+
+</body>
+</html>
+
